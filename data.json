@@ -1,0 +1,22 @@
+[
+    {"id": "C001", "transaksi": 45, "nominal": 2500000, "frekuensi": 12},
+    {"id": "C002", "transaksi": 23, "nominal": 1200000, "frekuensi": 8},
+    {"id": "C003", "transaksi": 67, "nominal": 3800000, "frekuensi": 18},
+    {"id": "C004", "transaksi": 12, "nominal": 650000, "frekuensi": 4},
+    {"id": "C005", "transaksi": 89, "nominal": 5200000, "frekuensi": 22},
+    {"id": "C006", "transaksi": 34, "nominal": 1800000, "frekuensi": 9},
+    {"id": "C007", "transaksi": 56, "nominal": 3100000, "frekuensi": 15},
+    {"id": "C008", "transaksi": 8, "nominal": 420000, "frekuensi": 2},
+    {"id": "C009", "transaksi": 78, "nominal": 4500000, "frekuensi": 20},
+    {"id": "C010", "transaksi": 29, "nominal": 1600000, "frekuensi": 7},
+    {"id": "C011", "transaksi": 91, "nominal": 5800000, "frekuensi": 24},
+    {"id": "C012", "transaksi": 15, "nominal": 780000, "frekuensi": 5},
+    {"id": "C013", "transaksi": 62, "nominal": 3400000, "frekuensi": 16},
+    {"id": "C014", "transaksi": 41, "nominal": 2200000, "frekuensi": 11},
+    {"id": "C015", "transaksi": 5, "nominal": 280000, "frekuensi": 1},
+    {"id": "C016", "transaksi": 73, "nominal": 4100000, "frekuensi": 19},
+    {"id": "C017", "transaksi": 27, "nominal": 1450000, "frekuensi": 6},
+    {"id": "C018", "transaksi": 84, "nominal": 4900000, "frekuensi": 23},
+    {"id": "C019", "transaksi": 19, "nominal": 950000, "frekuensi": 3},
+    {"id": "C020", "transaksi": 50, "nominal": 2900000, "frekuensi": 14}
+]

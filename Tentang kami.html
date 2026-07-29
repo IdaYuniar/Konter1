@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami | LokaMart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* CSS DARI KODE ANDA */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        .search-box input {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            width: 250px;
+        }
+
+        .nav-links a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #d1e5ff;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .hero video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(70%);
+        }
+
+        .hero h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 38px;
+            font-weight: 600;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+
+        /* ===== KONTEN UTAMA ===== */
+        .content {
+            width: 85%;
+            margin: 60px auto;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 80px;
+            padding: 20px; /* Tambahkan padding agar lebih rapi */
+            gap: 40px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        /* Mengatur urutan bergantian */
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .section img {
+            width: 45%;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            max-height: 300px; /* Batasi tinggi gambar agar seragam */
+            object-fit: cover;
+        }
+
+        .section img:hover {
+            transform: scale(1.02); /* Sedikit diperkecil hover agar tidak terlalu berlebihan */
+        }
+
+        .text {
+            width: 50%;
+        }
+
+        .text h2 {
+            color: #0056b3;
+            font-size: 28px; /* Dibuat sedikit lebih besar */
+            margin-bottom: 15px;
+        }
+
+        .text p {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 40px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .footer-col {
+            width: 200px;
+            margin-right: 30px;
+        }
+
+        footer img {
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        footer h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-top: 5px;
+            font-size: 14px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        footer a:hover {
+            opacity: 1;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons i {
+            margin-right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .social-icons i:hover {
+            color: #d1e5ff;
+        }
+        .search-box input {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  width: 250px;
+  font-size: 14px;
+  outline: none;
+}
+
+
+        /* MEDIA QUERIES (Responsif) */
+        @media (max-width: 992px) {
+             header, footer {
+                padding: 15px 20px;
+            }
+            .content {
+                width: 90%;
+            }
+            .search-box input {
+                width: 150px;
+            }
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            .nav-links {
+                margin-top: 10px;
+            }
+            .nav-links a {
+                margin: 0 10px;
+            }
+            .section, .section:nth-child(even) {
+                flex-direction: column; /* Ubah tata letak menjadi kolom */
+            }
+            .section img, .text {
+                width: 100%; /* Ambil lebar penuh */
+            }
+            footer {
+                justify-content: flex-start;
+            }
+            .footer-col {
+                width: 45%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="lokamart-logo.png" alt="LokaMart Logo">
+        </div>
+       <div class="search-box">
+  <input type="text" id="searchInput" placeholder="Cari barang..." />
+</div>
+
+        </div>
+        <div class="nav-links">
+           <a href="index.html" id="btnTentangKami">Beranda</a>
+           <a href="katalog produk.php" id="btnTentangKami">Produk</a>
+           <a href="Tentang kami.html" id="btnTentangKami">Tentang Kami</a>
+
+        </div>
+    </header>
+
+
+    <div class="content">
+
+        <div class="section">
+            <div class="text">
+                <h2>Cerita Kami 📝</h2>
+                <p>SmartKonter adalah layanan konter digital yang menyediakan berbagai kebutuhan transaksi seperti pulsa, paket data, token listrik, top up e-wallet, dan layanan pembayaran lainnya dengan cepat, mudah, dan terpercaya untuk memenuhi kebutuhan masyarakat sehari-hari.</p>
+            </div>
+            <img src="image/tentang kami.png" alt="Cerita Kami">
+        </div>
+
+        <div class="section">
+            <img src="image/visi misi.png" alt="Orang melihat kamera digital dengan laptop dan HP">
+            
+            <div class="text">
+                <h2>Visi dan Misi Kami 🚀</h2>
+                <p>Visi
+Menjadi konter digital terpercaya yang memberikan layanan transaksi elektronik dan telekomunikasi yang cepat, mudah, dan berkualitas bagi masyarakat.
+Menyediakan layanan digital yang lengkap dan mudah diakses oleh seluruh pelanggan, memberikan pelayanan yang cepat, aman, dan terpercaya, serta mengutamakan kepuasan pelanggan dalam setiap transaksi. SmartKonter juga berkomitmen untuk terus mengikuti perkembangan teknologi guna meningkatkan kualitas layanan dan menjadi mitra terpercaya dalam memenuhi kebutuhan digital masyarakat.
+</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text">
+                <h2>Nilai Utama Kami ⭐</h2>
+                <p>SmartKonter menjunjung tinggi kepercayaan, kecepatan, dan kualitas layanan dalam setiap transaksi. Kami berkomitmen untuk memberikan pelayanan yang ramah, aman, dan profesional, serta terus berinovasi mengikuti perkembangan teknologi agar dapat memenuhi kebutuhan digital pelanggan dengan lebih baik. Kepuasan pelanggan menjadi prioritas utama dalam setiap layanan yang kami berikan.</p>
+            </div>
+            <img src="image/Nilai Kami.png" alt="Nilai Kami">
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-col">
+            <img src="lokamart-logo.png" alt="LokaMart">
+            <p style="font-size: 14px;">Platform Digital UMKM Terpercaya.</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Tentang Kami</h4>
+            <a href="#">Visi & Misi</a>
+            <a href="#">Karir</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="footer-col">
+            <h4>Bantuan</h4>
+            <a href="#">Pusat Bantuan</a>
+            <a href="#">Cara Berjualan</a>
+            <a href="#">Pengembalian Produk</a>
+        </div>
+        <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="#">Kebijakan Privasi</a>
+            <a href="#">Syarat & Ketentuan</a>
+        </div>
+    </footer>
+
+</body>
+<script>
+  // Saat pengguna tekan Enter di kolom pencarian
+  document.getElementById('searchInput').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      const query = this.value.trim();
+
+      // Arahkan ke halaman daftar.html dengan query pencarian
+      if (query !== "") {
+        window.location.href = `daftar.html?search=${encodeURIComponent(query)}`;
+      }
+    }
+  });
+</script>
+
+</html>
